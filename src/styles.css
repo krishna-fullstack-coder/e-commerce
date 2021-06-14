@@ -17,6 +17,7 @@ body {
   flex-direction: row;
 }
 
+ /* elements that are placed immediately after the specified element but not inside the particular elements. */
 router-outlet + * {
   padding: 0 16px;
 }
@@ -136,10 +137,3 @@ app-top-bar {
   border-radius: 2px;
   background-color: #EEEEEE;
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
