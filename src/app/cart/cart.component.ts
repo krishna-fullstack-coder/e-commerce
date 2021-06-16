@@ -18,7 +18,11 @@ export class CartComponent implements OnInit {
   constructor(
     private cartService: CartService,
     private formBuilder: FormBuilder,
-  ) { }
+  ) {
+    // Called whenever cart link on top clicked.
+    // If we are on Cart page, and click cart, its not called. Data remains same, no refresh.
+    console.log("Cart Ctor");
+  }
 
   ngOnInit(): void {
   }

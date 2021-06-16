@@ -14,7 +14,10 @@ export class ProductDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,// service
     private cartService: CartService
-  ) { }
+  ) {
+    // Called whenever product link clicked, or on back button.
+    console.log("Product details Ctor");
+  }
 
   ngOnInit() {
     // First get the product id from the current route.
